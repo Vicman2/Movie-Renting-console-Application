@@ -100,7 +100,7 @@ function signIn(){
 }
 
 function verifyAdmin(msg){
-    createHeader("Are you an admin ? ", "Verify that you are an admin ");
+    createHeader("Are you an admin ? ", msg);
     inquirer
         .prompt([
             {
@@ -126,24 +126,24 @@ function verifyAdmin(msg){
 }
 
 function adminMenu(deObject){
-    createHeader("We have verifyied that you are an administrator", " Go ahead and make some changes, we hail you");
+    createHeader("We have verifyied that you are an administrat", " Go ahead and make some changes, we hail you");
     inquirer
         .prompt([
             {
                 type: "list",
                 name: "adminDuty",
                 message: "What do you want to do ? ",
-                choices: ["Add Movie", "Delete User", "View Movies"]
+                choices: ["Add Movie", "Delete Movie", "View Movies"]
             }
         ])
         .then( answers => {
             if(answers.adminDuty == "Add Movie"){
                 deObject.addMovie();
-            }else if(answers.adminDuty == "Delete User"){
-                console.table(movie)
-                deObject.removeMovie(movieId)
+            }else if(answers.adminDuty == "Delete Movie"){
+                console.table(Movies)
+                deObject.removeMovie()
             }else{
-                deObject.viewMovies();
+                deObject.showAllMovies();
             }
         })
 }
