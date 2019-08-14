@@ -1,4 +1,4 @@
-
+// Our users database
 module.exports = [
     {     
          "name": "Offordile Victor",

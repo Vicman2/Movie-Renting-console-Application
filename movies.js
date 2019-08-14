@@ -1,3 +1,4 @@
+
 module.exports = [
     {
         movieId: 1,
@@ -37,6 +38,7 @@ module.exports = [
         movieName: "Agents Of Shield",
         movieGenre: "Crime",
         yearOfProduction: 2010,
+        productionCompany: "Marvel",
         movieDirector: "Badako",
         runTime : 1.75,
         rating: 5,

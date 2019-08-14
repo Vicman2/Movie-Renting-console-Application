@@ -1,3 +1,4 @@
+ //The movie class
  module.exports = class Movie{
      constructor(id, movieName, movieGenre, yearOfProduction, productionComapany, movieDirector, runTime, rating, moviePrice){
         this.id = id;
