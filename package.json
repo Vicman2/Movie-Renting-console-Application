@@ -1,0 +1,28 @@
+{
+  "name": "movie-renting-console-application",
+  "version": "1.0.0",
+  "description": "A console based movie renting api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicman2/Movie-Renting-console-Application.git"
+  },
+  "keywords": [
+    "Console",
+    "Movie",
+    "Renting"
+  ],
+  "author": "Vicman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vicman2/Movie-Renting-console-Application/issues"
+  },
+  "homepage": "https://github.com/Vicman2/Movie-Renting-console-Application#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^7.3.3"
+  }
+}
